@@ -57,21 +57,42 @@
       </div>
     </div>
     <div
-      class="bg-[url('/ocean.png')] h-screen bg-cover bg-[#2e189393] bg-blend-lighten"
+      class="relative h-screen bg-cover bg-[url('/ocean.png')] bg-blend-lighten"
     >
+      <!-- Purple overlay layer -->
       <div
-        class="h-full flex flex-col justify-center items-center max-w-3xl mx-auto"
+        class="absolute inset-0 bg-[#482be7] opacity-30 mix-blend-lighten z-10"
+      ></div>
+
+      <!-- Content Layer -->
+      <div
+        class="relative h-full flex flex-col justify-center items-center max-w-3xl mx-auto z-20 text-white px-4"
       >
         <h2 class="text-md font-bold">Free Sample</h2>
         <h1 class="text-6xl font-bold text-center mt-14">
-          Ppwerful Generator And Free Figma Sources
+          Powerful Generator And Free Figma Sources
         </h1>
-        <p class="opacity-70 mt-14">
+        <p class="opacity-70 mt-14 text-center">
           Startup Framework contains components and complex blocks which can
           easily be integrated into almost any design. All of the components are
           made in the same style, and can easily be integrated into projects,
           allowing you to create hundreds of solutions.
         </p>
+      </div>
+    </div>
+
+    <!-- the third page  -->
+    <div
+      class="relative h-screen bg-[url('/Rectangle.png')] bg-cover overflow-hidden"
+    >
+      <!-- Purple overlay -->
+      <div
+        class="absolute inset-0 bg-[#482be7] opacity-30 mix-blend-lighten z-10"
+      ></div>
+
+      <!-- Image container ABOVE the overlay -->
+      <div class="relative z-20">
+        <img src="/Mockup.png" alt="mockup picture" class="mt-24" />
       </div>
     </div>
   </body>
