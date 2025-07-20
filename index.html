@@ -8,22 +8,20 @@
     <title>Vite App</title>
   </head>
   <body>
+    <!-- Section 1 -->
     <div
-      class="bg-[url('/Image.png')] h-screen bg-cover text-white bg-[#2f1893] bg-blend-lighten"
+      class="bg-[url('/Image.png')] h-screen bg-cover text-white bg-[#2f1893] bg-blend-lighten overflow-hidden"
     >
-      <div>
-        <nav class="font-semibold text-center">
-          <ul class="flex justify-center space-x-4 pt-10">
-            <li class="hover:opacity-30">Home</li>
-            <li class="hover:opacity-30">Features</li>
-            <li class="hover:opacity-30">Pricing</li>
-            <li class="hover:opacity-30">Blog</li>
-
-            <li class="hover:opacity-30">logo</li>
-            <li class="hover:opacity-30">anthoe logo</li>
-          </ul>
-        </nav>
-      </div>
+      <nav class="font-semibold">
+        <ul class="flex justify-center space-x-4 pt-10">
+          <li><a href="#" class="hover:opacity-30">Home</a></li>
+          <li><a href="#" class="hover:opacity-30">Features</a></li>
+          <li><a href="#" class="hover:opacity-30">Pricing</a></li>
+          <li><a href="#" class="hover:opacity-30">Blog</a></li>
+          <li><span class="hover:opacity-30">logo</span></li>
+          <li><span class="hover:opacity-30">anthoe logo</span></li>
+        </ul>
+      </nav>
       <div
         class="flex flex-col justify-center items-center mt-24 max-w-2xl mx-auto"
       >
@@ -31,7 +29,7 @@
         <h1 class="font-bold text-7xl mt-8">Forget About Code</h1>
         <div class="mt-8 text-[#fff] text-center max-w-xl pr-8 relative">
           Startup Framework gives you complete freedom over your creative
-          process — you don’t have to think about any technical aspects. There
+          process — you don't have to think about any technical aspects. There
           are no limits and absolutely no coding.
           <div class="absolute -top-[60px] -left-[200px] text-5xl opacity-60">
             &lt;
@@ -40,14 +38,12 @@
             &gt;
           </div>
         </div>
-        <ul
-          class="*:w-2 *:h-2 *:rounded-full *:border-white *:border mt-14 flex space-x-3"
-        >
-          <li class="bg-white"></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
+        <ul class="flex space-x-3 mt-14">
+          <li class="w-2 h-2 rounded-full bg-white border-white border"></li>
+          <li class="w-2 h-2 rounded-full border-white border"></li>
+          <li class="w-2 h-2 rounded-full border-white border"></li>
+          <li class="w-2 h-2 rounded-full border-white border"></li>
+          <li class="w-2 h-2 rounded-full border-white border"></li>
         </ul>
         <button
           class="mt-8 py-4 px-12 bg-[#482be7] rounded-3xl shadow-xl mix-blend-normal"
@@ -56,15 +52,14 @@
         </button>
       </div>
     </div>
+
+    <!-- Section 2 -->
     <div
-      class="relative h-screen bg-cover bg-[url('/ocean.png')] bg-blend-lighten"
+      class="relative h-screen bg-cover bg-[url('/ocean.png')] bg-blend-lighten overflow-hidden"
     >
-      <!-- Purple overlay layer -->
       <div
         class="absolute inset-0 bg-[#482be7] opacity-30 mix-blend-lighten z-10"
       ></div>
-
-      <!-- Content Layer -->
       <div
         class="relative h-full flex flex-col justify-center items-center max-w-3xl mx-auto z-20 text-white px-4"
       >
@@ -81,18 +76,95 @@
       </div>
     </div>
 
-    <!-- the third page  -->
+    <!-- Section 3 -->
     <div
-      class="relative h-screen bg-[url('/Rectangle.png')] bg-cover overflow-hidden"
+      class="relative h-screen bg-[url('/Rectangle.png')] bg-cover overflow-hidden flex items-center justify-start"
     >
-      <!-- Purple overlay -->
       <div
         class="absolute inset-0 bg-[#482be7] opacity-30 mix-blend-lighten z-10"
       ></div>
+      <div class="relative z-20 w-[450px]">
+        <img
+          src="/Mockup.png"
+          alt="Product mockup"
+          class="hidden md:block w-[450px] h-[450px] ]"
+        />
+      </div>
+      <div class="flex flex-col w-[600px] mx-16">
+        <div>
+          <h1 class="text-4xl">We Create Something New</h1>
+          <p class="mt-6 mb-14">
+            We have created a new product that will help designers, developers
+            and companies create websites for their startups quickly and easily.
+          </p>
+        </div>
+        <div class="flex gap-x-6 flex-col md:flex-row">
+          <div class="flex flex-col gap-6 w-[257px]">
+            <img
+              src="/fa-commenting-1.svg"
+              alt="Feature icon"
+              class="w-6 h-6"
+            />
+            <h2>30 New feature pages</h2>
+            <p>
+              Startup Framework contains components and complex blocks which can
+              easily.
+            </p>
+          </div>
+          <div class="flex flex-col gap-6 w-[257px]">
+            <img
+              src="/fa-commenting-1.svg"
+              alt="Feature icon"
+              class="w-6 h-6"
+            />
+            <h2>30 New feature pages</h2>
+            <p>
+              Startup Framework contains components and complex blocks which can
+              easily.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <ul class="mt-14 flex flex-col space-y-3 mx-24">
+          <li class="w-2 h-2 rounded-full bg-white border-white border"></li>
+          <li class="w-2 h-2 rounded-full border-white border"></li>
+          <li class="w-2 h-2 rounded-full border-white border"></li>
+          <li class="w-2 h-2 rounded-full border-white border"></li>
+          <li class="w-2 h-2 rounded-full border-white border"></li>
+        </ul>
+      </div>
+    </div>
 
-      <!-- Image container ABOVE the overlay -->
-      <div class="relative z-20">
-        <img src="/Mockup.png" alt="mockup picture" class="mt-24" />
+    <!-- Section 4 -->
+    <div
+      class="relative h-screen bg-cover bg-[url('/ocean.png')] bg-blend-lighten overflow-hidden flex items-center justify-center"
+    >
+      <div
+        class="absolute inset-0 bg-[#482be7] opacity-30 mix-blend-lighten z-10"
+      ></div>
+      <div class="w-80 space-y-6 mx-auto">
+        <h1 class="bold text-4xl leading-10">
+          We solve digital problems with an outstanding creative flare
+        </h1>
+        <p class="opacity-80">
+          We have created a new product that will help designers, developers and
+          companies create websites for their startups quickly and easily.
+        </p>
+      </div>
+      <!-- login card -->
+      <div class="bg-white h-[550px] w-[470px] mx-auto rounded-md">
+        <div class="flex items-center justify-center w-full">
+          <span
+            class="font-bold text-sm text-[#1e0e62] text-center mx-auto pt-6 border-[#1e0e62] border-b-2 w-1/2 pb-4"
+            >SIGN UP</span
+          >
+          <span
+            class="font-bold text-sm text-center mx-auto pt-6 border-[#ebeaed] border-b-2 w-1/2 pb-4"
+            style="color: rgba(21, 20, 57, 0.4)"
+            >LOGIN</span
+          >
+        </div>
       </div>
     </div>
   </body>
